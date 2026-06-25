@@ -89,7 +89,7 @@ width: 100%;
   width: 50%; /*mantiene la estructura a lo largo del documento, forma horizontal*/
   position: fixed; /*fixed deja estatica la navegación en el documento*/
   font-size: 22px; /*modifica el tamaño de letras, grandes o chicas*/
-  top: -3%; /*Mantiene la navegación a un tope de 21 puntos de separación en el documento*/
+  top: -1%; /*Mantiene la navegación a un tope de 21 puntos de separación en el documento*/
   display: inline-block;
 }
 .navegacion li{
