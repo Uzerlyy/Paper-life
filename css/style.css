@@ -155,7 +155,7 @@ height:400px;
 .articulo .p03,
 .articulo .p05,
 .articulo .p06{
-  font-family: "Damion", cursive;
+  font-family: monospace;
   font-size: 25px;
 }
 
@@ -166,7 +166,7 @@ font-size: 26px;
 }
 
 .articulo .p08{
-  font-family:  "Damion", cursive;
+  font-family:  Helvetica;
   font-size: 22px;
 }
 
