@@ -178,3 +178,30 @@ font-size: 26px;
 #Contac .articulo{
   font-size: 26px;
 }
+
+.PumpInf {
+  display: flex;
+  flex-direction: column; /* Apila el bloque de arriba y el de abajo */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Toda la altura de la pantalla aquí */
+  gap: 40px; /* Separación entre el bloque 5 y el bloque 4 */
+  border-radius: 45px;
+}
+
+/* Centramos las dos imágenes de cada bloque */
+#Bombita0, #Bombita3 {
+  display: flex;
+  justify-content: center; /* Centra las dos imágenes horizontalmente */
+  align-items: center;     /* Alineación vertical perfecta entre ellas */
+  gap: 20px;               /* Separación de 20px entre las dos imágenes */
+  width: 100%;             /* Asegura que use todo el ancho disponible */
+  
+}
+
+/* Opcional: Limpiamos márgenes por defecto que tienen las etiquetas <p> */
+.Bombita2, .Bombita4 {
+  margin: 0;
+  padding: 0;
+  
+}
