@@ -327,4 +327,80 @@ scroll-behavior: smooth;
 }
 /*-------------------------------Finaliza Botón para subir al inicio--------------------------------------*/
 
+/* ====== ARREGLO PARA CELULAR ====== */
+* {
+  box-sizing: border-box; 
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px; /* Baja de 20px a 16px, estándar móvil */
+  text-align: left; /* Quita el justify global, es del diablo en móvil */
+}
+
+/* Arregla todos los párrafos */
+p {
+  max-width: 100%; /* Que usen todo el ancho */
+  margin: 0; 
+  padding: 12px 16px; /* Solo 16px a los lados, como Farmacia */
+  text-align: left;
+}
+
+/* Tu caja azul marino */
+.articulo {
+  width: calc(100% - 32px); /* 100% menos 16px de cada lado */
+  margin: 16px; /* Solo 16px de separación */
+  padding: 20px; 
+  box-sizing: border-box;
+}
+
+/* Los otros cuadros de estudio */
+.estudio1 p,
+.estudio2 p {
+  margin: 8px; /* Bájale de 5% a 8px */
+  width: calc(100% - 16px);
+}
+
+/* Arregla el menú en celular */
+@media (max-width: 768px) {
+  .navegacion ul {
+    position: static; /* Quítale el fixed en móvil */
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    top: 0;
+  }
+  
+  .navegacion li {
+    display: block; /* Uno abajo del otro */
+    padding: 8px 16px;
+    text-align: center;
+  }
+  
+  .bton {
+    position: static; /* Tu logo también quítalo fixed */
+  }
+  
+  /* Tus carruseles */
+  .Contenedor1Carrusel1,
+  .ContenedorCarrusel {
+    max-width: 100%;
+    margin: 0 16px;
+    width: calc(100% - 32px);
+  }
+  
+  .galeri1 img,
+  .galeria img {
+    height: 250px; /* 400px es mucho para celular */
+  }
+}
+
+
+
+
+
 
