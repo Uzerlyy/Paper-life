@@ -205,3 +205,91 @@ font-size: 26px;
   padding: 0;
   
 }
+
+/* ====== PARCHE MÓVIL PARA EL SEGUNDO CSS ====== */
+@media (max-width: 768px) {
+  
+  /* 1. Quita los max-width fijos de carruseles */
+  .Contenedoor,
+  .Contenedor3Carrusel {
+    max-width: 100%;
+    width: calc(100% - 32px);
+    margin: 0 16px;
+  }
+  
+  /* 2. Baja el tamaño de fuente, 25px es criminal en móvil */
+  .articulo .p01,
+  .articulo .p02,
+  .articulo .p03,
+  .articulo .p05,
+  .articulo .p06 {
+    font-size: 16px; 
+    line-height: 1.5;
+  }
+  
+  .estudio1 .p07, 
+  .estudio2 .p07 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .articulo .p08 {
+    font-size: 16px;
+  }
+  
+  .p09 {
+    font-size: 15px;
+  }
+  
+  #Contac .articulo {
+    font-size: 16px;
+  }
+  
+  /* 3. Quita el margin: 5% que te roba espacio */
+  .estudio5 p,
+  .estudio4 p {
+    margin: 8px;
+    padding: 16px;
+    width: calc(100% - 16px);
+  }
+  
+  /* 4. Haz las imágenes responsive */
+  .galeria3 img {
+    height: 200px; /* De 400px a 200px */
+    width: 100%;
+  }
+  
+  .ImgEq5,
+  .ImagEq6 {
+    height: auto; /* Quita altura fija */
+    max-width: 100%;
+  }
+  
+  .ImagEq4 {
+    max-width: 100%;
+    padding: 0 16px;
+  }
+  
+  /* 5. Arregla tu carrusel de reseñas */
+  .Carruseel {
+    width: calc(100% * 3);
+  }
+  
+  .gleri1 img {    
+    width: 70px; /* De 90px a 70px */
+    height: 70px;
+  }
+  
+  /* 6. Quita el display:flex que te amontona todo */
+  .estudio5,
+  .estudio4 {
+    display: block; /* En móvil uno abajo del otro */
+  }
+  
+  #Bombita0, #Bombita3 {
+    flex-direction: column; /* Imágenes una abajo de otra */
+    gap: 10px;
+  }
+}
+
+
