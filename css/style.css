@@ -294,8 +294,9 @@ font-size: 26px;
   .vdeo1,
   .vdeo2{
     max-width: 100%;
-    width: calc(100% - 32px);
-    margin: 0 16px;
+    height: auto;
+    display: block;
+    
   }
 
 
