@@ -290,4 +290,13 @@ font-size: 26px;
     flex-direction: column; /* Imágenes una abajo de otra */
     gap: 10px;
   }
+
+  .vdeo1,
+  .vdeo2{
+    max-width: 100%;
+    width: calc(100% - 32px);
+    margin: 0 16px;
+  }
+
+
 }
