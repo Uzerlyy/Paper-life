@@ -291,7 +291,23 @@ font-size: 26px;
     gap: 10px;
   }
 
-  .vdeo1,
+  .vdeo1{
+    position: relative;
+    width: 100%;
+    max-width: 640px; /* Esto evita que en PC se vuelva absurdamente gigante */
+    margin: 0 auto;   /* Centra el video en la pantalla */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción de aspecto del video */
+  }
+  
+  .vdeo1 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Le quita el borde feo que traen por defecto */
+  }
+ 
   .vdeo2 {
     position: relative;
     width: 100%;
@@ -300,8 +316,8 @@ font-size: 26px;
     aspect-ratio: 16 / 9; /* Mantiene la proporción de aspecto del video */
   }
   
-  .vdeo1 iframe,
-  .vdeo2 frame {
+  
+  .vdeo2 iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -309,6 +325,7 @@ font-size: 26px;
     height: 100%;
     border: none; /* Le quita el borde feo que traen por defecto */
   }
+
 
 
 }
