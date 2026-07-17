@@ -37,7 +37,7 @@ left:0.5%;
   overflow: hidden; /* Esconde las fotos que están fuera de vista */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  background-color: black;
+  background-color: #222;
   
   
 }
@@ -85,18 +85,19 @@ width: 100%;
 .navegacion ul {
   
   background-color: rgb(173, 171, 184);
-  padding: 1px 0; 
-  width: 50%; /*mantiene la estructura a lo largo del documento, forma horizontal*/
+  padding: 1px 0;  
   position: fixed; /*fixed deja estatica la navegación en el documento*/
   font-size: 22px; /*modifica el tamaño de letras, grandes o chicas*/
-  top: -1%; /*Mantiene la navegación a un tope de 21 puntos de separación en el documento*/
-  display: inline-block;
+  top: -1%;/* Mantiene la navegación a un tope de 21 puntos de separación en el documento*/ 
+  display: inline-block; /*Coloca el menu-direcciones uno al lado del siguiente*/
 }
 .navegacion li{
-  display: inline-block; /*Coloca el menu-direcciones uno al lado del siguiente*/
+  display: inline-flex;
   padding: 15px; /*modifica la distancia entre los links*/
   
 }
+
+
 a {
   text-decoration: none; /*Quita la linea que se pone sobre el texto en los links*/
   color: rgb(255, 255, 255); /*Cambia el color de las letras*/
@@ -115,7 +116,7 @@ p {
   color: rgb(223, 223, 223);
   background-color: #020050;
   border-radius: 5px;
-
+  font-family: system-ui, sans-serif;
 }
 
 .Mi1,
@@ -346,7 +347,7 @@ html {
 p {
   max-width: 100%; /* Que usen todo el ancho */
   margin: 0; 
-  padding: 12px 16px; /* Solo 16px a los lados, como Farmacia */
+  padding: 12px 16px; /* Solo 16px a los lados*/
   text-align: left;
 }
 
@@ -401,9 +402,4 @@ p {
     height: 250px; /* 400px es mucho para celular */
   }
 }
-
-
-
-
-
 
