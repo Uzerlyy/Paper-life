@@ -292,11 +292,22 @@ font-size: 26px;
   }
 
   .vdeo1,
-  .vdeo2{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    
+  .vdeo2 {
+    position: relative;
+    width: 100%;
+    max-width: 640px; /* Esto evita que en PC se vuelva absurdamente gigante */
+    margin: 0 auto;   /* Centra el video en la pantalla */
+    aspect-ratio: 16 / 9; /* Mantiene la proporción de aspecto del video */
+  }
+  
+  .vdeo1 iframe,
+  .vdeo2 frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none; /* Le quita el borde feo que traen por defecto */
   }
 
 
